@@ -25,7 +25,7 @@ namespace Company.Function
             string name = req.Query["name"];
             string deviceKey = "test-vishnu-1";
             ServiceClient serviceClient = ServiceClient.CreateFromConnectionString("HostName=test-vishnu.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=BY0ePJJyVuNonD9bPYByWGZ3RPQenAKLyCFmNOxsXDc=");
-            string deviceId = "+Nfnhsg5IK2d+2zPmMN4mhLLcHUWcygMuEamOFFNmr8=";
+            string deviceId = "+Nfnhsg5IK2d+2zPmMN4mhLLcHUWcygMuEamOFFNm8=";
             string iotHubHostName = "test-vishnu.azure-devices.net";
             string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
             dynamic data = JsonConvert.DeserializeObject(requestBody);
